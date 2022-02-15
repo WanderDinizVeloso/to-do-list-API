@@ -1,5 +1,5 @@
-const stringsInNumber = require('./stringInNumber');
+const stringInNumber = require('./stringInNumber');
 
 module.exports = {
-  stringsInNumber,
+  stringInNumber,
 };
