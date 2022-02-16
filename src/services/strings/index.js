@@ -9,6 +9,7 @@ const TO_DOS = 'toDos';
 const FIRST_NAME = 'firstName';
 const LAST_NAME = 'lastName';
 const MESSAGE = 'message';
+const STATUS = 'status';
 
 module.exports = {
   USER,
@@ -22,4 +23,5 @@ module.exports = {
   FIRST_NAME,
   LAST_NAME,
   MESSAGE,
+  STATUS,
 };
