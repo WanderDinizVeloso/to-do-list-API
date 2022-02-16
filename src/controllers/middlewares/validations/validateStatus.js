@@ -6,9 +6,9 @@ const { toDoStatus } = require('../../../services/arrays');
 module.exports = async (req, _res, next) => {
   const { status } = req.body;
 
-  const verifiedPassword = paramWithListVerify(status, toDoStatus);
+  const verifiedStatus = paramWithListVerify(status, toDoStatus);
 
-  if (!verifiedPassword) {
+  if (!verifiedStatus) {
     return next(invalidParamWithList(STATUS, toDoStatus));
   }
 
