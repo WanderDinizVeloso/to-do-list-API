@@ -10,6 +10,7 @@ const FIRST_NAME = 'firstName';
 const LAST_NAME = 'lastName';
 const MESSAGE = 'message';
 const STATUS = 'status';
+const ORDER = 'order';
 
 module.exports = {
   USER,
@@ -24,4 +25,5 @@ module.exports = {
   LAST_NAME,
   MESSAGE,
   STATUS,
+  ORDER,
 };
