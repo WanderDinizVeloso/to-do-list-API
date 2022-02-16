@@ -1,13 +1,22 @@
 const express = require('express');
 
 const { create, remove, update } = require('../documents/users');
+const { wrapper, auth } = require('../middlewares');
 
 const router = express.Router({ mergeParams: true });
 
-router.post('/', create);
+router.post('/', wrapper([
+  create,
+]));
 
-router.put('/', update);
+router.put('/', wrapper([
+  auth,
+  update,
+]));
 
-router.delete('/', remove);
+router.delete('/', wrapper([
+  auth,
+  remove,
+]));
 
 module.exports = router;
