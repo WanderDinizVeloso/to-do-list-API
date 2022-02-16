@@ -1,11 +1,11 @@
 const create = require('./create');
 const remove = require('./remove');
-const searchById = require('./searchById');
+const searchAll = require('./searchAll');
 const update = require('./update');
 
 module.exports = {
   create,
   remove,
-  searchById,
+  searchAll,
   update,
 };
