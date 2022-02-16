@@ -1,17 +1,14 @@
 const { OK } = require('http-status-codes').StatusCodes;
 
 const { remove } = require('../../../services/documents/users');
-const { notFound, deletedSuccessfully } = require('../../statusAndMessage');
+const { deletedSuccessfully } = require('../../statusAndMessage');
 const { USER } = require('../../../services/strings');
 
-module.exports = async (req, res, next) => {
-  const { _id } = req.users;
+module.exports = async (req, res, _next) => {
+  const { users } = req;
+  const { authorization: token } = req.headers;
 
-  const removed = await remove(_id);
-
-  if (!removed) {
-    return next(notFound(USER));
-  }
+  const removed = await remove(users, token);
 
   return res
     .status(OK)
