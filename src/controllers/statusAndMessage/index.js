@@ -24,6 +24,9 @@ const invalid = (param) => ({
   message: `The invalid '${param}' field.`,
 });
 
+const internalError = () =>
+  'sorry, internal error.';
+
 module.exports = {
   createdSuccessfully,  
   registered,
@@ -31,4 +34,5 @@ module.exports = {
   deletedSuccessfully,
   modifiedSuccessfully,
   invalid,
+  internalError,
 };
