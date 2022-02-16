@@ -1,4 +1,4 @@
-const { CONFLICT, NOT_FOUND } = require('http-status-codes').StatusCodes;
+const { CONFLICT, NOT_FOUND, BAD_REQUEST } = require('http-status-codes').StatusCodes;
 
 const createdSuccessfully = (param) =>
   `'${param}' created successfully.`;
@@ -19,10 +19,16 @@ const deletedSuccessfully = (param) =>
 const modifiedSuccessfully = (param) =>
 `'${param}' modified successfully.`;
 
+const invalid = (param) => ({
+  status: BAD_REQUEST,
+  message: `The invalid '${param}' field.`,
+});
+
 module.exports = {
   createdSuccessfully,  
   registered,
   notFound,
   deletedSuccessfully,
   modifiedSuccessfully,
+  invalid,
 };
