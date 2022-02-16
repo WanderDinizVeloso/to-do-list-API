@@ -16,9 +16,13 @@ const notFound = (param) => ({
 const deletedSuccessfully = (param) =>
   `'${param}' deleted successfully,`;
 
+const modifiedSuccessfully = (param) =>
+`'${param}' modified successfully.`;
+
 module.exports = {
   createdSuccessfully,  
   registered,
   notFound,
   deletedSuccessfully,
+  modifiedSuccessfully,
 };
