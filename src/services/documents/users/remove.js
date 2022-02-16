@@ -7,7 +7,7 @@ module.exports = async (user, token) => {
 
   const { deletedCount } = await remove(id);
 
-  await create(token);
+  await create({ token });
 
   return { deletedCount, user };
 };
