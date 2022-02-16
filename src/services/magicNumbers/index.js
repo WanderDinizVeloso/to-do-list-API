@@ -1,5 +1,9 @@
 const PARSE_INT_RADIX = 10;
+const ASCENDING_TYPE = 1;
+const DESCENDING_TYPE = -1;
 
 module.exports = {
   PARSE_INT_RADIX,
+  DESCENDING_TYPE,
+  ASCENDING_TYPE,
 };
