@@ -8,7 +8,7 @@ const update = require('./documents/update');
 module.exports = (collection) => ({
   create: async (doc) => create(collection, doc),
   remove: async (id) => remove(collection, id),
-  searchAll: async () => searchAll(collection),
+  searchAll: async (filter, sort) => searchAll(collection, filter, sort),
   searchById: async (id) => searchById(collection, id),
   searchByField: async (field) => searchByField(collection, field),
   update: async (doc) => update(collection, doc),
