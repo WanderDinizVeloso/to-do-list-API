@@ -4,7 +4,7 @@ const { SORT } = require('../../../services/strings');
 const { sortBy } = require('../../../services/arrays');
 
 module.exports = async (req, _res, next) => {
-  const { sort } = req.query;
+  const { sort = 'createdAt' } = req.query;
 
   const verifiedSort = paramWithListVerify(sort, sortBy);
 
