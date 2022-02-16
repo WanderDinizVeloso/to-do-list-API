@@ -12,6 +12,7 @@ const MESSAGE = 'message';
 const STATUS = 'status';
 const ORDER = 'order';
 const SORT = 'sort';
+const ID = 'id';
 
 module.exports = {
   USER,
@@ -28,4 +29,5 @@ module.exports = {
   STATUS,
   ORDER,
   SORT,
+  ID,
 };
