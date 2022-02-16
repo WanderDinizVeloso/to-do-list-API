@@ -5,10 +5,10 @@ const { modifiedSuccessfully, notFound } = require('../../statusAndMessage');
 const { USER } = require('../../../services/strings');
 
 module.exports = async (req, res, next) => {
-  const { id } = req.users;
+  const { _id } = req.user;
   const { firstName, lastName, email, password } = req.body;
 
-  const updated = await update({ id, firstName, lastName, email, password });
+  const updated = await update({ _id, firstName, lastName, email, password });
 
   if (!updated) {
     return next(notFound(USER));
