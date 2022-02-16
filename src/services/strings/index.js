@@ -10,7 +10,6 @@ const FIRST_NAME = 'firstName';
 const LAST_NAME = 'lastName';
 const MESSAGE = 'message';
 
-
 module.exports = {
   USER,
   USERS,
