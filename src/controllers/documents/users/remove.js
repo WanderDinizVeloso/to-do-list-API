@@ -5,10 +5,10 @@ const { deletedSuccessfully } = require('../../statusAndMessage');
 const { USER } = require('../../../services/strings');
 
 module.exports = async (req, res, _next) => {
-  const { users } = req;
+  const { user } = req;
   const { authorization: token } = req.headers;
 
-  const removed = await remove(users, token);
+  const removed = await remove(user, token);
 
   return res
     .status(OK)
