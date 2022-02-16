@@ -1,14 +1,13 @@
-const { USERS } = require('../../strings');
-const { remove, searchById } = require('../../../models')(USERS);
+const { USERS, TOKENS } = require('../../strings');
+const { remove } = require('../../../models')(USERS);
+const { create } = require('../../../models')(TOKENS);
 
-module.exports = async (id) => {
-  const user = await searchById(id);
-
-  if (!user) {
-    return null;
-  }
+module.exports = async (users, token) => {
+  const { _id: id } = users;
 
   const { deletedCount } = await remove(id);
 
-  return { deletedCount, user };
+  await create(token);
+
+  return { deletedCount, users };
 };
