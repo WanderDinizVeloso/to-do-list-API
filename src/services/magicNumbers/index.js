@@ -4,6 +4,7 @@ const DESCENDING_TYPE = -1;
 const PASSWORD_LENGTH = 10;
 const NAME_LENGTH = 3;
 const MESSAGE_LENGTH = 6;
+const ID_LENGTH = 24;
 
 module.exports = {
   PARSE_INT_RADIX,
@@ -12,4 +13,5 @@ module.exports = {
   PASSWORD_LENGTH,
   NAME_LENGTH,
   MESSAGE_LENGTH,
+  ID_LENGTH,
 };
