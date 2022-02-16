@@ -3,6 +3,7 @@ const USERS = 'users';
 const EMAIL = 'email';
 const TOKEN = 'token';
 const TOKENS = 'tokens';
+const EMAIL_OR_PASSWORD = 'email or password';
 
 module.exports = {
   USER,
@@ -10,4 +11,5 @@ module.exports = {
   EMAIL,
   TOKEN,
   TOKENS,
+  EMAIL_OR_PASSWORD,
 };
