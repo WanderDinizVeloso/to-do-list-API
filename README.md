@@ -85,7 +85,7 @@ Assim, enumero habilidades/conhecimentos a adquirir para futuros eventos Trybe/t
 - Analisar minhas limitações, visando não acumular várias atividades e/ou candidaturas em vagas;
 - Me empenhar para realização de testes, se possível, não deixar para última atividade do projeto;
 - revisar meu código, para possíveis melhorias, principalmente com relação as dependências entre funções;
-- estruturar todo o banco, para somente depois implementa-lo, visando excessos de alterações e ganho de tempo;
+- estruturar todo o banco, para somente depois implementa-lo, evitando excessos de alterações e assim um ganho de tempo;
 
 ---
 
