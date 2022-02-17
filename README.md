@@ -24,6 +24,7 @@ Projeto criado para o Blitz de Carreira da Trybe, colocando em prática os conhe
 - [Status](#status)
 - [Licença](#licença)
 - [Habilidades desenvolvidas](#habilidades-desenvolvidas)
+- [Habilidades a desenvolver](#habilidades-a-desenvolver)
 - [Tecnologias utilizadas](#tecnologias-utilizadas)
 - [Organização e Estruturação do Projeto](#organização-e-estruturação-do-projeto)
 - [Pré-requisitos](#pré-requisitos)
@@ -71,6 +72,20 @@ Este projeto esta sobe a licença [MIT](https://pt.wikipedia.org/wiki/Licen%C3%A
 - Entender como utilizar o bcrypt para criptografar senhas de usuários;
 - Entender e aplicar os conceitos de markdown na criação de um README estruturado;
 - Realizar o Deploy da aplicação do heroku e do banco mongodb no atlas;
+
+---
+
+# Habilidades a desenvolver
+
+Durante o período proposto pela Trybe, para o blitz de carreira, eu estava com algumas demandas pessoais, além de outros testes técnicos em andamento, prejudicado assim meu desempenho no período.
+
+Assim, enumero habilidades/conhecimentos a adquirir para futuros eventos Trybe/testes técnicos:
+
+- Melhorar minha gestão do tempo;
+- Analisar minhas limitações, visando não acumular várias atividades e/ou candidaturas em vagas;
+- Me empenhar para realização de testes, se possível, não deixar para última atividade do projeto;
+- revisar meu código, para possíveis melhorias, principalmente com relação as dependências entre funções;
+- estruturar todo o banco, para somente depois implementa-lo, visando excessos de alterações e ganho de tempo;
 
 ---
 
