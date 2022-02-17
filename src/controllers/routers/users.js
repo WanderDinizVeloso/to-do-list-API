@@ -26,10 +26,6 @@ router.put('/', wrapper([
 
 router.delete('/', wrapper([
   auth,
-  validateFirstName,
-  validateLastName,
-  validateEmail,
-  validatePassword,
   remove,
 ]));
 
